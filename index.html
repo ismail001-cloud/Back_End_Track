@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIBIGUE</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  GOOGLE FONTS (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--======================= SWIPER JS CSS===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+        <input id="nav-toggle" type="checkbox">
+        <a href="index.html"><h4>PORTFOLIO</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <label for="nav-toggle" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+
+        </div>  
+    </nav>
+
+    <!--======================= HEADER ===========================-->
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left slideUp">
+                <h3>IRE TIBIGUE</h3>
+                
+                <img src="./tibugue images/IMG-20240919-WA0004.jpg" alt="">
+                <a href="about.html" class="btn">Download Resume</a>
+            
+            </div>
+            
+            <div class="header__right mySwiper1 slideUp">
+
+                <div class="header__right-1 swiper-wrapper" >
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/hd1.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+                    
+                    <div class="header__image swiper-slide">
+                        <img src="./tibugue images/IMG-20240919-WA0005.jpg" alt="">
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--======================= PORTFOLIO =============================-->
+
+<section class="portfolio">
+    <h3>Portfolio</h3>
+
+    <div class="container Portfolio__container">
+        <div class="portfolio__left">
+            <img src="./images/macbook - Copy - Copy.jpg" alt="">
+        </div>
+        <div class="portfolio__right">
+            <h4>My Journey so Far</h4>
+
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>Creative Nursary Primary School Jimeta Yola Adamawa State (Primary Certificate)</span><br>2004 - 2005</li>
+                    <li><span>O'level</span><br>1984</li>
+                    <li><span>University</span><br>1989</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="skills">
+                <ul>
+                    <li><span>microsoft office</span><br>2000</li>
+                    <li><span>SPSS</span><br>2012</li>
+                    <li><span>Web apps</span><br>2014</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Teaching</span><br>15 year</li>
+                    <li><span>Lecturing</span><br>10 years</li>
+                    <li><span>Project Supervision</span><br>10 years</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--===================POPULAR PRODUCTS============================-->
+
+    <section class="products">
+        <h2>Notable Projects</h2>
+        <div class="container products__container">
+
+            <article class="product">
+                <div class="product__image">
+                    <img src="./imghome/h6.jpg" alt="">
+                </div>
+
+                <div class="product__info">
+                        <h4>Broadband</h4>
+                    <p>True Broadband speed and round the clock connectivity dictate the progression of every business. 
+                    </p>
+                    <a href="services.html" class="btn">Know More</a>
+                </div>
+            </article>
+
+            <article class="product">
+                <div class="product__image">
+                    <img src="./imghome/h2.jpg" alt="">
+                </div>
+
+                <div class="product__info">
+                    <h4>Renewable Energy </h4>
+                    <p>ADAPTRA's unique strategy interweaves business goals with environmental sustainability.</p>
+                    <a href="services.html" class="btn">Know More</a>
+                </div>
+
+            </article>
+
+            <article class="product">
+                <div class="product__image">
+                    <img src="./imghome/h8.jpg" alt="">
+                </div>
+                <div class="product__info">
+                        <h4>Security System</h4>
+                    <p>ADAPTRA’s end-to-end security surveillance solutions deliver simple usability that’s as impressive as their powerful capabilities.</p>
+                    <a href="services.html" class="btn">Know More</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!--===================TESTIMONIALS============================-->
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Testimonials</h2>
+        <div class="testimonial__wrapper swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="ti">
+                    <img src="./images/Richard.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Richard</h5>
+                    <small>Customer</small>
+            
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Adaptra's blazing-fast internet with incredible upload speeds keeps my 
+                        streams flawless at work. I highly recommend it for both professional and families!   
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="ti">
+                    <img src="./images/Simon.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Simon</h5>
+                    <small>Customer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Effecient and effective power! i have used solar 
+                        installed by Adaptra for over eight (8) years, this has made 
+                        life easy and comfortable, and above all less cost and clean energy.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="ti">
+                    <img src="./images/raptunes.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ismail</h5>
+                    <small>Customer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Good and fast service. Full thumbs!!!.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="ti">
+                    <img src="./images/raptunes.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ismail</h5>
+                    <small>Customer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Friendly staff and good quality prompt service!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="ti">
+                    <img src="./images/raptunes.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ismail</h5>
+                    <small>Customer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        The service was fast and good. thanks
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+<!--======================== FOOTER ============================-->
+
+    <footer class="footer">
+        <section class="container container__footer">
+            
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div class="footer__info">
+                  <p>+234 810 999 8080</p>
+                  <p>e-mail: info@adaptra.net.ng</p>
+                </div>
+        
+                <ul class="footer__socials">
+                  <li><a href="#"><img src="./icons/fb-icon.png" alt=""></a></li>
+                  <li><a href="#"><img src="./icons/instagram-icon.png" alt=""></a></li>
+                  <li><a href="#"><img src="./icons/linkdin-icon.png" alt=""></a></li>
+                  <li><a href="#"><img src="./icons/twitter-icon.png" alt=""></a></li>
+                </ul>  
+            </div>
+              
+        </section>
+              <div class="footer__copyright">
+                <small>Copyright &copy 2024 All Right Reserved | 8-Bits Tech Solutions.</small>
+              </div>
+        
+    </footer>
+
+<!--=================== LINK JAVASCRIPT FILE============================-->
+
+    <script src="./main.js"></script>
+
+<!--=================== SWIPER JS HEADER IMAGE SLIDE============================-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper1", {
+    slidesPerView:1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    
+    breakpoints: {
+                600: {
+                        slidesPerView: 1,
+                }
+            },
+
+    
+        });
+  
+</script>
+
+<!--=================== SWIPER JS TESTIMONIAL============================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+    
+    </script>
+  
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+                600: {
+                        slidesPerView: 2
+                }
+            },
+          });
+    </script>
+
+</body>
+</html>

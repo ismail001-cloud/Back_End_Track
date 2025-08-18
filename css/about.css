@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*============================== VARIABLES FOR GENERAL STYLING===============================*/
+
+:root {
+    --color-primary: #6c63ff;
+    --color-green: #00bf8e;
+    --color-yellow: #f7c94b;
+    --color-red: #f74842;
+    --color-red-variant: rgba(247, 88, 66, 0.4);
+    --color-ash: rgba(255, 255, 255, 0.4);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 500ms ease;
+}
+
+/*============================== GENERAL STYLING===============================*/
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 4rem 0;
+}
+
+section h2{
+    text-align: center;
+    margin: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+ h4{
+    font-size: 1.3rem;
+ }
+
+ a {
+    color: var(--color-white);
+ }
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    border-radius: 0.2rem;
+}
+
+.btn-primary{
+    background: var(--color-red);
+    color: var(--color-white);
+    
+}
+
+/*============================== NAV BAR ===============================*/
+
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/*========= to change nav bar on scroll using javascript ============== */
+
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+    font-weight: bold;
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+    
+}
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+.nav__container .burger{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.nav__container .burger .line {
+    width: 30px;
+    height: 1px;
+    background-color: var(--color-white);
+    margin: 9px;
+    border-radius: 3px;
+    transition: var(--transition);
+}
+.nav__container .logo{
+    margin-top: 50px;
+    height: 100px;
+    width: 150px;
+    border-radius: 0.8rem;
+}
+
+
+
+/*============================== ABOUT ===============================*/
+
+.about{
+    background: var(--color-bg); 
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144)),  url(../images/banner.jpg);  
+}
+.about__container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    
+}
+
+.about__right img{
+    margin-top: 10rem;
+    border-radius: 1rem;
+}
+
+.about__left{
+    padding-bottom: 1rem;
+    text-align: justify;
+    margin: 0.8rem;
+}
+.about__left p{
+    text-align: justify;
+    margin: 1rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+
+
+/*============================== MISSION, VISION & VALUE ===============================*/
+.mission{
+    margin-top: 0;
+    padding-top: 1rem;
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+
+.mission__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.mission{
+    background: var(--color-bg2);
+    border: 1px solid transparent;
+    transition: ease 200ms;
+    border-radius: 1rem;
+}
+
+.mission:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.mission__info{
+    padding: 0.9rem;
+}
+
+.mission__info h4{
+    margin: 0 0 0.8rem;
+    text-align: center;
+}
+
+.mission__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+/*============================== TEAM ===============================*/
+
+.team{
+    background: var(--color-bg1);
+    }
+
+.team__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.team__member{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team__member-social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    transform: translateY(-50%);
+    transition: var(--transition);
+
+}
+
+.team__member-social a{
+    padding: 0.5rem;
+}
+.team__member-social img{
+
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.2rem;
+}
+
+.team__member-image img{
+    filter: saturate(0);
+}
+
+.team__member:hover img{
+    filter: saturate(1);
+}
+
+.team__member-info{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.team__member-info p{
+    color: var(--color-ash);
+    font-size: 0.9rem;
+}
+
+.team__member:hover .team__member-social{
+    right: 0;
+}
+
+
+
+
+/*==============================FOOTER===============================*/
+
+.footer{
+    background: var(--color-bg1); 
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+.container__footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+.container__footer > div h4 {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+.footer__1 p{
+    margin: 0 0 2rem;
+    font-size: 0.8rem;
+}
+ .footer ul li{
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+ }
+
+ .footer ul li a:hover{
+    text-decoration: underline;
+ }
+
+ .footer__socials{
+    display: flex;
+    gap: 1rem;
+    size: 1.2rem;
+    margin-top: 0.5rem;  
+ }
+
+ .footer__socials img{
+    height: 1.5rem;
+    width: 1.5rem;
+ }
+
+ .footer__info{
+    font-size: 0.8rem;
+ }
+
+ .footer__copyright{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid var(--color-bg2);
+ }
+
+
+ /*============================== MEDIA QUERIES (TABLETS===============================*/
+ @media screen and (max-width: 1024px) {
+
+    /*======================= NAVBAR========================*/
+    
+    nav{
+        height: 2.5rem;
+    }
+
+    .nav__container .logo{
+        height: 80px;
+        width: 100px;
+        margin-top: 3rem;
+    }
+
+    .nav__menu{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 2.5rem;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(0, 0 , 0, 0.8);
+    overflow: hidden;
+    transition: var(--transition);
+    font-size: 0.8rem;    
+    
+        
+}
+#nav-toggle:checked ~ .nav__menu {
+    bottom: 0;
+}
+.nav__container .burger{
+    display:block;
+}
+ 
+#nav-toggle:checked ~ .burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(230deg);
+}
+
+#nav-toggle:checked ~ .burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-230deg);
+}
+
+#nav-toggle:checked ~ .burger .line:nth-child(2) {
+    opacity: 0;
+}
+#nav-toggle{
+display: none;
+}
+
+
+
+/*======================= ABOUT========================*/
+    
+    .about{
+        margin-top: 1rem;
+        padding-top: 3rem 0 3rem;
+        
+    }
+
+    .about__container{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .about__right{
+        text-align: center;
+        margin-top: -5rem;
+    }
+
+    .about__left{
+        padding-bottom: 0;
+
+    }
+
+    /*======================= MISSION & VISION ========================*/
+.mission__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/*======================= TEAM ========================*/
+    .team__container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        
+    }
+
+    .team__member{
+        padding: 1rem;
+    }
+
+    .team__member-social a{
+        padding: 0.1rem;
+    }
+
+    .team__member-social img{
+        margin: 0.5rem 0.4rem 0.3rem;
+        
+    }
+
+    /*======================= footer
+    ========================*/
+
+    .container__footer{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .footer__socials{
+        justify-content: center;
+    }
+
+
+}
+
+/*======================= MEDIA QUERIES (PHONES)========================*/
+
+@media screen and (max-width: 600px) {
+
+        .container{
+            width: var(--container-width-sm);
+        }
+
+    .team__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*======================= MEDIA QUERIES (PHONES)========================*/
+
+@media screen and (max-width: 500px) {
+
+    .container{
+        width: var(--container-width-sm);
+    }
+
+ /*======================= MISSION & VISION ========================*/
+ .mission__container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.team__container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+}

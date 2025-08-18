@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*============================== VARIABLES FOR GENERAL STYLING===============================*/
+
+:root {
+    --color-primary: #6c63ff;
+    --color-green: #00bf8e;
+    --color-yellow: #f7c94b;
+    --color-red: #f74842;
+    --color-red-variant: rgba(247, 88, 66, 0.4);
+    --color-ash: rgba(255, 255, 255, 0.4);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 500ms ease;
+}
+
+/*============================== GENERAL STYLING===============================*/
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    
+}
+
+section{
+    padding: 5rem 0;
+}
+
+section h2{
+    text-align: center;
+    margin: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+ h4{
+    font-size: 1.3rem;
+ }
+
+ a {
+    color: var(--color-white);
+ }
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    border-radius: 0.5rem;
+}
+
+.btn-primary{
+    background: var(--color-red);
+    color: var(--color-white);
+    
+}
+
+/*============================== NAV BAR ===============================*/
+
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/*========= to change nav bar on scroll using javascript ============== */
+
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+    font-weight: bold;
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+    
+}
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+.nav__container .burger{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.nav__container .burger .line {
+    width: 30px;
+    height: 1px;
+    background-color: var(--color-white);
+    margin: 9px;
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+/*--================= CONTACT ==========--*/
+.contact{
+    background: var(--color-bg);
+    background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144)),  url(../images/banner.jpg);
+
+}
+
+.contact__container{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/*--================= ASIDE ==========--*/
+.contact__aside{
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+    margin-top: 2rem;
+}
+
+.contact__social{
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem;
+}
+
+.contact__details img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.aside__image{
+    width: 15rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.contact__aside h3{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact__aside p{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}
+
+.contact__details li{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+
+}
+
+.contact__social{
+    display: flex;  
+}
+
+.contact__social li img{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact__form .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+
+/*======================= MEDDIA QUERY =========================*/
+
+
+@media screen and (max-width: 1024px) {
+
+    .container{
+        width: var(--container-width-md);
+        margin-top: 1rem;
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+
+/*======================= NAVBAR========================*/
+
+    nav{
+        height: 2.5rem;
+    }
+
+    .nav__container .logo{
+        height: 80px;
+        width: 100px;
+        margin-top: 1rem;
+    }
+
+
+    .nav__menu{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 2.5rem;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(0, 0 , 0, 0.8);
+    overflow: hidden;
+    transition: var(--transition);
+    font-size: 0.8rem;    
+    
+        
+}
+#nav-toggle:checked ~ .nav__menu {
+    bottom: 0;
+}
+.nav__container .burger{
+    display:block;
+}
+ 
+#nav-toggle:checked ~ .burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(230deg);
+}
+
+#nav-toggle:checked ~ .burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-230deg);
+}
+
+#nav-toggle:checked ~ .burger .line:nth-child(2) {
+    opacity: 0;
+}
+#nav-toggle{
+display: none;
+}
+/*======================= CONTACT =========================*/
+
+.contact__container{
+    gap: 1.5rem;
+    margin-top: 5rem;
+    height: auto;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__aside{
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+}
+
+.contact__form{
+    align-self: center;
+    margin-right: 1.5rem;
+}
+/*======================= FOOTER =========================*/
+
+
+.container__footer{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+}
+
+.footer__socials{
+    justify-content: center;
+}
+
+}
+/*======================= MEDDIA QUERY (PHONES)=========================*/
+@media screen and (max-width: 600px) {
+
+.contact__container{
+     grid-template-columns: 1fr;
+     gap: 3rem;
+     margin-top: 0;
+     padding: 1rem;
+}
+
+.contact__form{
+    margin: 0 1rem 3rem;
+}
+
+.form__name{
+    flex-direction: column;
+}
+
+.form__name input[type="text"] {
+    width: 100%;
+}
+    
+}
+
+
+
+
+
+
+
